@@ -1,3 +1,26 @@
+> **Fork notice:** this is a personal fork of [78/xiaozhi-esp32](https://github.com/78/xiaozhi-esp32) (MIT License).
+> The `develop` branch holds my changes on top of upstream; `main` mirrors upstream.
+> The original README continues below.
+
+## What this fork adds
+
+Changes target the **Waveshare ESP32-S3-Touch-LCD-3.49** board
+(`main/boards/waveshare/esp32-s3-touch-lcd-3.49/`):
+
+- **Animated eyes visor** in landscape instead of the default chat UI.
+- **Emotions**: the eyes react to the assistant's emotion (happy, sad, angry, surprised, and more).
+- **Touch reactions**: tap, long press and repeated pokes make the eyes react, with an "annoyance" level.
+- **Idle routine and autoplay mini-game** when nobody talks to the device.
+- **Volume gesture**: swipe up or down on the status-icon half of the screen to change speaker volume.
+- **Battery level** read from the ADC divider on GPIO4 and shown in the status bar.
+- **Touch and display fixes**: AXS15231B touch framing, axis mapping for the rotated display,
+  and faster frame transfer straight into the DMA band.
+
+Server side (Spanish ASR, local tools for weather, news and exchange rates) lives in
+[P3lfox/xiaozhi-esp32-server](https://github.com/P3lfox/xiaozhi-esp32-server).
+
+---
+
 # An MCP-based Chatbot
 
 (English | [中文](README_zh.md) | [日本語](README_ja.md))
